@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.u1{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(202, 113, 30, 0.61)50%,rgba(202, 113, 30, 0.61)50%),url('OIP\ \(6\).jpeg');
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+.u1 h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    letter-spacing: 20px;
+    font-size: 45px;
+    color:black;
+}
+.u2{
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgb(160, 160, 160);
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.u2 content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+.topic{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(238, 87, 33);
+}
+.image-box img{
+    height: 250px;
+    width: 410px;
+    margin-top: 200px;
+    margin-left: 500px;
+    
+}
+.content form{
+    width: 40%;
+    margin-right: 30px;
+}
+.content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+.content .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    padding-left: 16px;
+    border: 2px solid rgb(139, 44, 9);
+    transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+    background-color:white;
+    border-color:rgb(139, 44, 9) ;
+
+}
+.content .input-box label{
+    position: absolute;
+    left: 18px;
+    top:50%;
+    color: rgb(139, 44, 9);
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;   
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: rgb(139, 44, 9);
+    background: white;
+}
+.content .message-box{
+    min-height: 100px;
+    position: relative;
+}
+.content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border-radius:6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.content .message-box textarea:focus{
+    border-color:rgb(139, 44, 9);
+
+}
+.content .message-box label{
+    position: absolute;
+    font-size: 16px;
+    color:rgb(139, 44, 9);
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+    left: 12px;
+    top: -10px;
+    color: rgb(139, 44, 9) ;
+    background-color: white;
+    font-size: 14px;
+}
+.content .input-box input[type="Submit"]{
+    padding-left: 0;
+    font-size: 18px;
+    font-weight:500;
+    color: white;
+    background: rgb(238, 87, 33);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.content .input-box input[type="Submit"]:hover{
+    background: rgba(255, 68, 0, 0.637);
+}
+@media (max-width:900px){
+    .content .image-box{
+        max-width: 70%;
+        display: none;
+    }
+    .content form{
+        width: 50%;
+        margin-left: 30px;
+    }
+    .image-box img{
+        height: 0;
+    }
+    .u2{
+        max-width: 450px;
+        width: 100%;
+        background: white;
+        border-radius: 10px;
+        margin: 0 20px;
+        box-shadow: 0 5px 10px rgb(160, 160, 160);
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .u1 h1{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        letter-spacing: 20px;
+        font-size: 40px;
+        color:black;
+        
+    }
+}

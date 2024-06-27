@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.c1 h1{
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.c1 p{
+    margin-top: 2px;
+    display: flex;
+    margin-left: 35px;
+}
+.c1 img{
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 400px;
+}
